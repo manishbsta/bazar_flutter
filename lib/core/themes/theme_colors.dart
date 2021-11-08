@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-mixin ThemeColors {
-  final kPrimaryColor = const Color(0xFFecf2f9);
-  final kAccentColor = const Color(0xFFc8d9eb);
+class ThemeColors {
+  static const kPrimaryColor = Color(0xFFf3f4f7);
+  static const kPrimaryVariantColor = Color(0xFFecf2f9);
+  static const kSecondaryColor = Color(0xFF318ce7);
+  static const kSecondaryVariantColor = Color(0xFFe1f5fe);
 }

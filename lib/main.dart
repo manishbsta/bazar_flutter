@@ -3,12 +3,17 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'core/themes/app_theme.dart';
-
 import 'presentation/router/app_router.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarBrightness: Brightness.light,
+      statusBarColor: ThemeColors.kPrimaryColor,
+    ),
+  );
 
   final _theme = AppTheme();
   final _appRouter = AppRouter();
