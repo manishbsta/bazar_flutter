@@ -5,4 +5,5 @@ class ThemeColors {
   static const kPrimaryVariantColor = Color(0xFFecf2f9);
   static const kSecondaryColor = Color(0xFF318ce7);
   static const kSecondaryVariantColor = Color(0xFFe1f5fe);
+  static Color kIconColor = Colors.grey.shade800;
 }
